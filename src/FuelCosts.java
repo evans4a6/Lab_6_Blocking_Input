@@ -59,10 +59,10 @@ public class FuelCosts {
         }while (!good);
 
         cost = (100 / milesGallon) * price;
-        System.out.println("\nThe cost for you to drive 100 miles is " + cost + " dollars.");
+        System.out.println("\nThe cost for you to drive 100 miles is " + String.format("%.2f", cost) + " dollars.");
 
         mileage = gallons * milesGallon;
-        System.out.println("\nThe total amount you can go with a full tank is " + mileage + " miles.");
+        System.out.println("\nThe total amount you can go with a full tank is " + String.format("%.2f", mileage) + " miles.");
 
 
     }
